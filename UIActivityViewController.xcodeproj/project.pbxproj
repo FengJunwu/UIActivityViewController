@@ -13,6 +13,8 @@
 		A4BD960B1FE8FB32008E3112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4BD960A1FE8FB32008E3112 /* Assets.xcassets */; };
 		A4BD960E1FE8FB32008E3112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4BD960C1FE8FB32008E3112 /* LaunchScreen.storyboard */; };
 		A4BD96111FE8FB32008E3112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BD96101FE8FB32008E3112 /* main.m */; };
+		A4BD96191FE8FB96008E3112 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BD96181FE8FB7C008E3112 /* Social.framework */; };
+		A4BD96221FE910D9008E3112 /* CustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BD96211FE910D9008E3112 /* CustomActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		A4BD960D1FE8FB32008E3112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4BD960F1FE8FB32008E3112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4BD96101FE8FB32008E3112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4BD96181FE8FB7C008E3112 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A4BD96201FE910D9008E3112 /* CustomActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomActivity.h; sourceTree = "<group>"; };
+		A4BD96211FE910D9008E3112 /* CustomActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BD96191FE8FB96008E3112 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				A4BD96001FE8FB32008E3112 /* UIActivityViewController */,
 				A4BD95FF1FE8FB32008E3112 /* Products */,
+				A4BD96171FE8FB7B008E3112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				A4BD96021FE8FB32008E3112 /* AppDelegate.m */,
 				A4BD96041FE8FB32008E3112 /* ViewController.h */,
 				A4BD96051FE8FB32008E3112 /* ViewController.m */,
+				A4BD96201FE910D9008E3112 /* CustomActivity.h */,
+				A4BD96211FE910D9008E3112 /* CustomActivity.m */,
 				A4BD96071FE8FB32008E3112 /* Main.storyboard */,
 				A4BD960A1FE8FB32008E3112 /* Assets.xcassets */,
 				A4BD960C1FE8FB32008E3112 /* LaunchScreen.storyboard */,
@@ -69,6 +78,14 @@
 				A4BD96101FE8FB32008E3112 /* main.m */,
 			);
 			path = UIActivityViewController;
+			sourceTree = "<group>";
+		};
+		A4BD96171FE8FB7B008E3112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4BD96181FE8FB7C008E3112 /* Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +162,7 @@
 				A4BD96061FE8FB32008E3112 /* ViewController.m in Sources */,
 				A4BD96111FE8FB32008E3112 /* main.m in Sources */,
 				A4BD96031FE8FB32008E3112 /* AppDelegate.m in Sources */,
+				A4BD96221FE910D9008E3112 /* CustomActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E6U2NCH59;
 				INFOPLIST_FILE = UIActivityViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanglao.UIActivityViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E6U2NCH59;
 				INFOPLIST_FILE = UIActivityViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanglao.UIActivityViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
